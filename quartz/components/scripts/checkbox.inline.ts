@@ -7,6 +7,8 @@ document.addEventListener("nav", () => {
     "input.checkbox-toggle",
   ) as NodeListOf<HTMLInputElement>
   checkboxes.forEach((el, index) => {
+    // did not work:
+    // el.removeAttribute("disabled")
     const elId = checkboxId(index)
 
     const switchState = (e: Event) => {
