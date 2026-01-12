@@ -100,8 +100,9 @@ function setupLocalProgress() {
 
   // Initial call
   updateState()
-  
-  // Keep your Global Widget logic for the Index page here if desired...
+}
+
+function setupGlobalProgress() {
   if (window.location.pathname === "/" || window.location.pathname === "/index") {
     console.log("display global progress")
     injectGlobalWidget()
@@ -195,4 +196,5 @@ function setupFolding() {
 // Run on initial load and navigation
 // document.addEventListener("nav", setupCheckboxes)
 document.addEventListener("nav", setupLocalProgress)
+document.addEventListener("nav", setupGlobalProgress)
 document.addEventListener("nav", setupFolding)
