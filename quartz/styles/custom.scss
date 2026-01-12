@@ -1,3 +1,9 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+video {
+  max-height: 720px;
+  width: auto; /* Maintains aspect ratio */
+  display: block; /* Allows margin auto to work */
+}
