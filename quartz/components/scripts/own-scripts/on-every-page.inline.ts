@@ -1,105 +1,112 @@
-// quartz/components/scripts/alarm.inline.ts
+function setupProgressWidgets() {
+  const currentPath = window.location.pathname
+  
+  // 1. Cleanup old local widget (if exists from previous nav)
+  const existingLocal = document.getElementById("local-progress-widget")
+  if (existingLocal) existingLocal.remove()
 
-function setupCheckboxes() {
-  console.log("deactivating checkboxes")
-  const checkboxes = document.querySelectorAll('input[type="checkbox"][disabled]') as NodeListOf<HTMLInputElement>
+  // 2. Identify Checkboxes & PRE-LOAD STATE
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]') as NodeListOf<HTMLInputElement>
+  const relevantCheckboxes: HTMLInputElement[] = []
+  const validIdsOnPage = new Set<string>()
+
   checkboxes.forEach(cb => {
-    cb.removeAttribute("disabled")
-    
-    // Optional: Save state to local storage so it persists on refresh
-    const id = cb.parentElement?.innerText.trim() // Use text as a unique key
-    if (id) {
-      cb.checked = localStorage.getItem(id) === 'true'
-      cb.addEventListener('change', () => {
-        localStorage.setItem(id, cb.checked.toString())
-      })
+    // Skip checkboxes in TOC or Footer
+    if (cb.closest(".table-of-contents") || cb.closest("footer")) return
+
+    const text = cb.parentElement?.innerText.trim()
+    if (text) {
+      const uniqueId = `${currentPath}::${text}`
+      
+      // Store ID
+      cb.dataset.taskId = uniqueId
+      validIdsOnPage.add(uniqueId)
+      
+      // --- FIX: LOAD STATE NOW (Before calculating score) ---
+      // We also enable the checkbox here so it's ready for interaction
+      if (cb.disabled) cb.removeAttribute("disabled")
+      cb.checked = localStorage.getItem(uniqueId) === 'true'
+      
+      relevantCheckboxes.push(cb)
     }
+  })
+
+  // 3. Garbage Collection (Clean up old keys for this page)
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i)
+    if (key && key.startsWith(`${currentPath}::`)) {
+      if (!validIdsOnPage.has(key)) {
+        localStorage.removeItem(key)
+        i-- 
+      }
+    }
+  }
+
+  // 4. Create & Inject Local Widget
+  const total = relevantCheckboxes.length
+
+  if (total > 0) {
+    const widget = document.createElement("div")
+    widget.id = "local-progress-widget"
+    widget.innerHTML = `
+      <div class="progress-label">
+        <span>Progress</span>
+        <span class="progress-text">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+        <div class="progress-ticks" style="--total-tasks: ${total};"></div>
+      </div>
+    `
+    
+    const content = document.querySelector(".popover-hint") || document.querySelector("article")
+    if (content) content.appendChild(widget)
+
+    // --- INITIAL UPDATE ---
+    // Now that checkboxes are hydrated, this will show the correct % immediately
+    updateLocalState(relevantCheckboxes, widget)
+  }
+
+  // 6. Bind Event Listeners
+  // (We already loaded state in step 2, now we just watch for changes)
+  relevantCheckboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      const id = cb.dataset.taskId
+      if (id) {
+        if (cb.checked) {
+          localStorage.setItem(id, 'true')
+        } else {
+          localStorage.removeItem(id) 
+        }
+
+        // Update UI
+        const widget = document.getElementById("local-progress-widget")
+        if (widget) updateLocalState(relevantCheckboxes, widget)
+        updateGlobalWidget()
+      }
+    })
   })
 }
 
+// helper function for local progess bar
+function updateLocalState(checkboxes: HTMLInputElement[], widget: HTMLElement) {
+  const total = checkboxes.length
+  const checkedCount = checkboxes.filter(cb => cb.checked).length
+  const percentage = total === 0 ? 0 : Math.round((checkedCount / total) * 100)
 
-function setupLocalProgress() {
-  // 1. cleanup old widget if navigation happened
-  const existingWidget = document.getElementById("local-progress-widget")
-  if (existingWidget) existingWidget.remove()
-
-  // 2. Scan for checkboxes
-  const checkboxes = document.querySelectorAll('input[type="checkbox"]') as NodeListOf<HTMLInputElement>
-  
-  // Filter for valid checkboxes (e.g. ones that were disabled markdown ones)
-  // or just use all of them. Let's assume we want all.
-  const relevantCheckboxes: HTMLInputElement[] = []
-  checkboxes.forEach(cb => {
-      // Logic to identify if this is a "task" checkbox. 
-      // Usually all checkboxes in markdown are tasks.
-      relevantCheckboxes.push(cb)
-  })
-
-  const total = relevantCheckboxes.length
-
-  // If no tasks, do nothing
-  if (total === 0) return
-
-  // 3. Create Widget HTML matching the sketch
-  const widget = document.createElement("div")
-  widget.id = "local-progress-widget"
-  widget.innerHTML = `
-    <div class="progress-label">
-      <span>Progress</span>
-      <span class="progress-text">0%</span>
-    </div>
-    <div class="progress-track">
-      <div class="progress-fill"></div>
-      <div class="progress-ticks" style="--total-tasks: ${total};"></div>
-    </div>
-  `
-
-  // 4. Append to the bottom of the content
-  const content = document.querySelector(".popover-hint") || document.querySelector("article") || document.querySelector(".center")
-  if (content) {
-    content.appendChild(widget)
-  }
-
-  // 5. Update Logic
   const progressFill = widget.querySelector(".progress-fill") as HTMLElement
   const progressText = widget.querySelector(".progress-text") as HTMLElement
-
-  const updateState = () => {
-    const checkedCount = relevantCheckboxes.filter(cb => cb.checked).length
-    const percentage = Math.round((checkedCount / total) * 100)
-    
-    // Update visuals
+  
+  if (progressFill && progressText) {
     progressFill.style.width = `${percentage}%`
     progressText.innerText = `${checkedCount}/${total} (${percentage}%)`
     
-    // Optional: Visual flair - change color if complete?
     if (percentage === 100) {
-        progressFill.style.backgroundColor = "var(--tertiary)" // Success color
+       progressFill.style.backgroundColor = "var(--tertiary)"
+    } else {
+       progressFill.style.backgroundColor = "var(--secondary)"
     }
   }
-
-  // 6. Bind Events
-  relevantCheckboxes.forEach(cb => {
-    // Ensure we handle the disabled state removal like before
-    if (cb.disabled) {
-       cb.removeAttribute("disabled")
-       const id = cb.parentElement?.innerText.trim()
-       if (id) {
-         cb.checked = localStorage.getItem(id) === 'true'
-         cb.addEventListener('change', () => {
-           localStorage.setItem(id, cb.checked.toString())
-           updateState()
-           updateGlobalWidget() // Keep your global index logic if you still use it
-         })
-       }
-    } else {
-        // If it was already enabled (custom html), just bind listener
-        cb.addEventListener('change', updateState)
-    }
-  })
-
-  // Initial call
-  updateState()
 }
 
 function setupGlobalProgress() {
@@ -137,7 +144,7 @@ function updateGlobalWidget() {
     }
   }
 
-  widget.innerText = `🏆 Total Global Tasks Completed: ${totalCompleted}`
+  widget.innerText = `🏆 Overall number of challenges completed: ${totalCompleted}`
 }
 
 function setupFolding() {
@@ -194,7 +201,6 @@ function setupFolding() {
 }
 
 // Run on initial load and navigation
-// document.addEventListener("nav", setupCheckboxes)
-document.addEventListener("nav", setupLocalProgress)
+document.addEventListener("nav", setupProgressWidgets)
 document.addEventListener("nav", setupGlobalProgress)
 document.addEventListener("nav", setupFolding)
