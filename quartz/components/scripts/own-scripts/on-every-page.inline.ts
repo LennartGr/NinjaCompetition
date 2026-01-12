@@ -17,6 +17,95 @@ function setupCheckboxes() {
   })
 }
 
+// quartz/components/scripts/progress.inline.ts
+
+function setupProgressAndCheckboxes() {
+  // 1. Inject the Progress Bar Container if missing
+  let progressContainer = document.getElementById("page-progress-container")
+  if (!progressContainer) {
+    progressContainer = document.createElement("div")
+    progressContainer.id = "page-progress-container"
+    progressContainer.innerHTML = '<div class="progress-fill"></div>'
+    document.body.prepend(progressContainer)
+  }
+  const progressFill = progressContainer.querySelector(".progress-fill") as HTMLElement
+
+  // 2. Select and Enable Checkboxes (Your logic + Progress calculation)
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]') as NodeListOf<HTMLInputElement>
+  const total = checkboxes.length
+  
+  // Helper to update the bar width
+  const updateProgressBar = () => {
+    if (total === 0) {
+      progressFill.style.width = "0%"
+      return
+    }
+    const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length
+    const percentage = (checkedCount / total) * 100
+    progressFill.style.width = `${percentage}%`
+  }
+
+  checkboxes.forEach(cb => {
+    // Only process disabled ones (the default markdown checkboxes)
+    if (cb.disabled) {
+      cb.removeAttribute("disabled")
+      
+      const id = cb.parentElement?.innerText.trim()
+      if (id) {
+        // Load state
+        const savedState = localStorage.getItem(id) === 'true'
+        cb.checked = savedState
+        
+        // Save state on change & Update Bar
+        cb.addEventListener('change', () => {
+          localStorage.setItem(id, cb.checked.toString())
+          updateProgressBar()
+          updateGlobalWidget() // Update global counter if it exists
+        })
+      }
+    }
+  })
+
+  // Initial bar update
+  updateProgressBar()
+
+  // 3. Global Progress Widget (Only runs on Index Page)
+  if (window.location.pathname === "/" || window.location.pathname === "/index") {
+    injectGlobalWidget()
+  }
+}
+
+function injectGlobalWidget() {
+  // Calculate total completed items from LocalStorage
+  // Note: This assumes only checkboxes are stored as 'true' in LS.
+  // A true "Global %" is hard in static sites without a build index, 
+  // so we display "Total Quests Completed".
+  
+  const container = document.querySelector("article") // Append to main content
+  if (!container || document.getElementById("global-progress-widget")) return
+
+  const widget = document.createElement("div")
+  widget.id = "global-progress-widget"
+  container.prepend(widget) // Add to top of index page
+
+  updateGlobalWidget()
+}
+
+function updateGlobalWidget() {
+  const widget = document.getElementById("global-progress-widget")
+  if (!widget) return
+
+  let totalCompleted = 0
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i)
+    if (key && localStorage.getItem(key) === 'true') {
+      totalCompleted++
+    }
+  }
+
+  widget.innerText = `🏆 Total Global Tasks Completed: ${totalCompleted}`
+}
+
 function setupFolding() {
   // Select all H1s inside the main article content
   // We use the "article" selector to avoid targeting headers in sidebars/footers
@@ -71,5 +160,6 @@ function setupFolding() {
 }
 
 // Run on initial load and navigation
-document.addEventListener("nav", setupCheckboxes)
+// document.addEventListener("nav", setupCheckboxes)
+document.addEventListener("nav", setupProgressAndCheckboxes)
 document.addEventListener("nav", setupFolding)
