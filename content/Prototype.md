@@ -7,4 +7,5 @@ some new content, test
 # A header
 some content under the header
 - [ ] more boxes
-- [ ] even another one
+- [ ] even another one (renamed)
+- [ ] extra box
