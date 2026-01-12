@@ -43,24 +43,62 @@ h1.foldable {
 }
 
 
-/* For progress bars */
-#page-progress-container {
-  position: fixed;
+/* quartz/styles/custom.scss */
+
+/* Wrapper for the whole widget */
+#local-progress-widget {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: var(--bodyFont);
+}
+
+/* The text label above the bar */
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--darkgray);
+  font-size: 0.9rem;
+}
+
+/* The gray background track */
+.progress-track {
+  position: relative;
+  width: 100%;
+  height: 24px; /* Broader bar */
+  background-color: var(--lightgray);
+  border-radius: 12px;
+  overflow: hidden; /* Clips the fill and ticks at corners */
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* The colored fill */
+.progress-fill {
+  height: 100%;
+  background-color: var(--secondary); /* Your theme color */
+  width: 0%;
+  transition: width 0.3s ease-out;
+}
+
+/* The Ticks / Segments */
+/* We use a repeating gradient to draw lines without needing extra HTML elements */
+.progress-ticks {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px; /* Thin line */
-  background: transparent;
-  z-index: 1000;
-  pointer-events: none; /* Let clicks pass through */
+  height: 100%;
+  pointer-events: none;
   
-  .progress-fill {
-    height: 100%;
-    background-color: var(--secondary); /* Uses your theme color */
-    width: 0%;
-    transition: width 0.3s ease;
-    box-shadow: 0 0 10px var(--secondary);
-  }
+  /* Draws a vertical white line every (100% / total) */
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent calc((100% / var(--total-tasks)) - 2px),
+    rgba(255, 255, 255, 0.7) calc((100% / var(--total-tasks)) - 2px),
+    rgba(255, 255, 255, 0.7) calc(100% / var(--total-tasks))
+  );
 }
 
 /* Optional: Special display for the Global tracker on Index */
