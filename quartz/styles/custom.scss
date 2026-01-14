@@ -8,7 +8,7 @@ video {
   display: block; /* Allows margin auto to work */
 }
 
-h1.foldable {
+h2.foldable {
   cursor: pointer;
   position: relative;
   
@@ -109,4 +109,59 @@ h1.foldable {
   border-radius: 8px;
   border-left: 4px solid var(--secondary);
   font-weight: bold;
+}
+
+.video-popup {
+  cursor: pointer;
+  color: var(--primary);
+  text-decoration: underline;
+  display: inline-block;
+  margin: 0.5rem 0;
+
+  &::after {
+    content: '▶';
+    margin-left: 0.3rem;
+    font-size: 0.8em;
+  }
+}
+
+.video-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    display: flex;
+  }
+
+  .video-container {
+    width: 90%;
+    max-height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .close-btn {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      color: white;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    iframe {
+      //height: 70%;
+      aspect-ratio: 9/15;
+      border: none;
+    }
+  }
 }
