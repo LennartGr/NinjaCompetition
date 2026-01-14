@@ -148,9 +148,9 @@ function updateGlobalWidget() {
 }
 
 function setupFolding() {
-  // Select all H1s inside the main article content
+  // Select all H2s inside the main article content
   // We use the "article" selector to avoid targeting headers in sidebars/footers
-  const headers = document.querySelectorAll("article h1")
+  const headers = document.querySelectorAll("article h2")
 
   headers.forEach((header) => {
     // 1. Add the arrow icon
@@ -166,11 +166,11 @@ function setupFolding() {
     header.classList.add("foldable")
 
     // 3. Identify content to fold
-    // We gather all next siblings until we hit another H1 or end of container
+    // We gather all next siblings until we hit another H2 or end of container
     const contentElements: Element[] = []
     let nextSibling = header.nextElementSibling
 
-    while (nextSibling && nextSibling.tagName !== "H1") {
+    while (nextSibling && nextSibling.tagName !== "H2" && nextSibling.tagName !== "H1") {
       contentElements.push(nextSibling)
       nextSibling = nextSibling.nextElementSibling
     }
@@ -204,3 +204,31 @@ function setupFolding() {
 document.addEventListener("nav", setupProgressWidgets)
 document.addEventListener("nav", setupGlobalProgress)
 document.addEventListener("nav", setupFolding)
+document.addEventListener('click', (e) => {
+  const videoBtn = (e.target as HTMLElement).closest('.video-popup');
+  if (!videoBtn) return;
+
+  e.preventDefault();
+  const videoId = videoBtn.getAttribute('data-video');
+  const overlay = document.querySelector('.video-overlay') as HTMLElement;
+  const iframe = overlay.querySelector('iframe') as HTMLIFrameElement;
+
+  iframe.src = `./attachments/${videoId}`;
+  overlay.classList.add('active');
+
+  // Close button
+  const closeBtn = overlay.querySelector('.close-btn');
+  closeBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    iframe.src = '';
+    overlay.classList.remove('active');
+  });
+
+  // Close when clicking outside the video
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      iframe.src = '';
+      overlay.classList.remove('active');
+    }
+  });
+});
