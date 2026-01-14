@@ -3,9 +3,12 @@
 // put your custom CSS here!
 
 video {
+  max-width: 100%;
   max-height: 720px;
-  width: auto; /* Maintains aspect ratio */
-  display: block; /* Allows margin auto to work */
+  max-height: 1080px; /* From your previous request */
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
 
 h2.foldable {
