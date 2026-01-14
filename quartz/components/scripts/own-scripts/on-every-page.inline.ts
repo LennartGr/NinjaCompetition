@@ -213,7 +213,7 @@ document.addEventListener('click', (e) => {
   const overlay = document.querySelector('.video-overlay') as HTMLElement;
   const iframe = overlay.querySelector('iframe') as HTMLIFrameElement;
 
-  iframe.src = `./attachments/${videoId}`;
+  iframe.src = `./attachments/Videos/${videoId}`;
   overlay.classList.add('active');
 
   // Close button
