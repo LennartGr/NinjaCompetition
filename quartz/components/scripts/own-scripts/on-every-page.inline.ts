@@ -201,34 +201,42 @@ function setupFolding() {
 }
 
 // Run on initial load and navigation
-document.addEventListener("nav", setupProgressWidgets)
-document.addEventListener("nav", setupGlobalProgress)
-document.addEventListener("nav", setupFolding)
-document.addEventListener('click', (e) => {
-  const videoBtn = (e.target as HTMLElement).closest('.video-popup');
-  if (!videoBtn) return;
-
-  e.preventDefault();
-  const videoId = videoBtn.getAttribute('data-video');
-  const overlay = document.querySelector('.video-overlay') as HTMLElement;
-  const iframe = overlay.querySelector('iframe') as HTMLIFrameElement;
-
-  iframe.src = `./attachments/Videos/${videoId}`;
-  overlay.classList.add('active');
-
-  // Close button
-  const closeBtn = overlay.querySelector('.close-btn');
-  closeBtn?.addEventListener('click', (e) => {
-    e.stopPropagation();
-    iframe.src = '';
+document.addEventListener("nav", () => {
+  setupProgressWidgets(); setupGlobalProgress(); setupFolding();
+  
+  // Handle video overlay clicks
+  const overlay = document.querySelector<HTMLElement>('.video-overlay')!;
+  const video = overlay.querySelector<HTMLVideoElement>('video')!;
+  const closeBtn = overlay.querySelector<HTMLElement>('.close-btn')!;
+  
+  // Close when clicking the close button
+  closeBtn.addEventListener('click', () => {
+    video.pause();
+    video.currentTime = 0;
+    video.src = '';
     overlay.classList.remove('active');
   });
-
+  
   // Close when clicking outside the video
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
-      iframe.src = '';
+      video.pause();
+      video.currentTime = 0;
+      video.src = '';
       overlay.classList.remove('active');
     }
   });
+});
+
+document.addEventListener('click', (e: MouseEvent) => {
+  const videoBtn = (e.target as HTMLElement).closest('.video-popup');
+  if (!videoBtn) return;
+  
+  e.preventDefault();
+  const overlay = document.querySelector<HTMLElement>('.video-overlay')!;
+  const video = overlay.querySelector<HTMLVideoElement>('video')!;
+  
+  video.src = `./attachments/Videos/${videoBtn.getAttribute('data-video')}`;
+  overlay.classList.add('active');
+  video.play().catch(console.error);
 });

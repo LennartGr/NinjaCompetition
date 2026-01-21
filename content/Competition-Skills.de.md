@@ -279,6 +279,9 @@ lang: 'de'
 <div class="video-overlay">
   <div class="video-container">
     <span class="close-btn">×</span>
-    <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video controls class="video-player">
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
