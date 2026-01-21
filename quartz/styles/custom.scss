@@ -21,6 +21,13 @@ h2.foldable {
   
   /* Prevent text selection when clicking rapidly */
   user-select: none; 
+  transition: color 0.2s ease;
+
+  /* Style for when all checkboxes are checked */
+  &.all-checked {
+    color: #888; /* Light grey color */
+    opacity: 0.8;
+  }
 
   .fold-icon {
     margin-right: 10px;

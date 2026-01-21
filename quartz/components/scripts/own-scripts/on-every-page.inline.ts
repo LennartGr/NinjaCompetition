@@ -83,6 +83,7 @@ function setupProgressWidgets() {
         const widget = document.getElementById("local-progress-widget")
         if (widget) updateLocalState(relevantCheckboxes, widget)
         updateGlobalWidget()
+        updateHeaderStyles()
       }
     })
   })
@@ -147,6 +148,39 @@ function updateGlobalWidget() {
   widget.innerText = `🏆 Overall number of challenges completed: ${totalCompleted}`
 }
 
+function updateHeaderStyles() {
+  // Get all H2 headers
+  const headers = document.querySelectorAll("article h2")
+  
+  headers.forEach(header => {
+    // Find the next sibling elements until the next H2
+    const sectionElements: Element[] = []
+    let nextSibling = header.nextElementSibling
+    
+    while (nextSibling && nextSibling.tagName !== "H2") {
+      sectionElements.push(nextSibling)
+      nextSibling = nextSibling.nextElementSibling
+    }
+    
+    // Find all checkboxes in this section
+    const sectionCheckboxes = Array.from(sectionElements)
+      .flatMap(el => Array.from(el.querySelectorAll('input[type="checkbox"]')) as HTMLInputElement[])
+    
+    // If there are checkboxes in this section
+    if (sectionCheckboxes.length > 0) {
+      // Check if all checkboxes are checked
+      const allChecked = sectionCheckboxes.every(checkbox => checkbox.checked)
+      
+      // Add or remove the 'all-checked' class based on the check state
+      if (allChecked) {
+        header.classList.add('all-checked')
+      } else {
+        header.classList.remove('all-checked')
+      }
+    }
+  })
+}
+
 function setupFolding() {
   // Select all H2s inside the main article content
   // We use the "article" selector to avoid targeting headers in sidebars/footers
@@ -202,7 +236,7 @@ function setupFolding() {
 
 // Run on initial load and navigation
 document.addEventListener("nav", () => {
-  setupProgressWidgets(); setupGlobalProgress(); setupFolding();
+  setupProgressWidgets(); setupGlobalProgress(); setupFolding(); updateHeaderStyles();
   
   // Handle video overlay clicks
   const overlay = document.querySelector<HTMLElement>('.video-overlay')!;
