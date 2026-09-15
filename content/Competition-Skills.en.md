@@ -45,10 +45,10 @@ lang: "en"
 3. [ ] reach all the way to the top
 4. [ ] 2 rungs at once
 5. [ ] 3 rungs at once
-   > [!tip] Extras:
-   >
-   > - Complete each level with different techniques (strength, kick, C)
-   > - Also climb down again (no jumping)
+> [!tip] Extras:
+> * Complete each level with different techniques (strength, kick, C)
+> * Also climb down again (level by level, no jumping off)
+
 
 ## N3: Pin Board
 
@@ -63,13 +63,12 @@ lang: "en"
    > - One pin from each side
    > - Between boards with one pin per board
 
-## N4: Kids Course Speedrun (cheese pieces etc.)
-
-- Kids course next to the Wall (<span class="video-popup" data-video="KinderCourse/demo.mp4">old video 🎥</span>)
+<!--## N4: Kids Course Speedrun (cheese pieces etc.)
+* Kids course next to the Wall (<span class="video-popup" data-video="KinderCourse/demo.mp4">old video 🎥</span>)
 
 1. [ ] complete the course under 80 seconds
 2. [ ] complete the course under 55 seconds
-3. [ ] complete the course under 40 seconds
+3. [ ] complete the course under 40 seconds-->
 
 ## N5: Mikado Rods
 
@@ -79,10 +78,9 @@ lang: "en"
 1. [ ] complete (<span class="video-popup" data-video="Mikado/1.mp4">video 🎥</span>)
 2. [ ] complete without touching the round plates at the bottom of the rods (<span class="video-popup" data-video="Mikado/2.mp4">video 🎥</span>)
 3. [ ] climb up, then finish with only hand contact (<span class="video-popup" data-video="Mikado/3.mp4">video 🎥</span>)
-   > [!tip] Extras:
-   >
-   > - Finish in one without intermediate swings
-   > - 360° around one rod, then continue
+> [!tip] Extras (for only hands):
+> * Finish in one without intermediate swings
+> * 360° around one rod, then continue
 
 ## N6: Wall
 
@@ -256,7 +254,7 @@ lang: "en"
 4. [ ] there and back backwards
    > [!tip] Extra:
    >
-   > - Balance two segments on Parkour Bar Frame 2 <span class="video-popup" data-video="Balance/HighBar-Balance.mp4">(video 🎥)</span>
+   > - Balance two segments on the Parkour Bar Frame<span class="video-popup" data-video="Balance/HighBar-Balance.mp4">(video 🎥)</span>
 
 ## S2: Hanging
 
