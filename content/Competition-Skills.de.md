@@ -31,6 +31,7 @@ lang: "de"
 4. [ ] 2m Laché
 5. [ ] 2,5m Laché
 6. [ ] 3m Laché
+
 <span class="track-input" data-kind="number" data-placeholder="Distanz" data-key="lache-max-dist" data-min="0" data-step="0.1"></span>m persönlicher Rekord
 > [!tip] Extras:
 > * Lachés zusammenhängend absolvieren (ohne absetzen, selbe Gap erlaubt), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Stück" data-key="lache-consecutive" data-min="1" data-step="1"></span> geschafft
@@ -101,13 +102,15 @@ lang: "de"
 ## N4: Labyrinth-Board
 * blaue waagrechte Labyrinth-Hängeboards
 * zum starten/rankommen kann sich ein Block als Hilfe genommen werden
+* blaues Board selber darf nicht gegriffen werden
 
 1. [ ] einfacheres der beiden (mit weniger oft umstecken) einmal von Anfang bis Ende
 2. [ ] schwierigeres durchhangeln
 3. [ ] beide in einem von oben nach unten durch (der Ring dazwischen darf mit genutzt werden)
 4. [ ] beide von unten nach oben
+4. [ ] von oben nach unten, ohne Ring
+4. [ ] von unten nach oben, ohne Ring
 > [!tip] Extras:
-> * beide durch, ohne Ring in der Mitte zu verwenden
 > * in jeden Schacht einmal mit beiden Haltern rein
 > * Halter nur auf einer Seite des Stabs greifen
 
@@ -165,7 +168,7 @@ lang: "de"
 
 1. [ ] Fidget-Spinner ein Segment weiter greifen (120° Drehung, siehe <span class="video-popup" data-video="Spinner/demo.mp4">Video</span>)
 2. [ ] Ein X flippen (180° Drehung)
-3. [ ] Mehrfach hintereinander mit nur einem Zwischen/Rückschwung (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥︎ 2" data-key="spin-reps" data-min="2" data-step="1"></span>Wdh.)
+3. [ ] Mehrfach hintereinander mit nur einem Zwischen/Rückschwung (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥︎ 2" data-key="spin-reps" data-min="2" data-step="1"></span> Wdh.)
 > [!tip] Extras:
 > - Mehr Drehung (z.B. zwei Segmente beim Spinner)
 > - Drehung in die andere Richtung (vorwärts vs. rückwärts)
@@ -192,7 +195,7 @@ lang: "de"
 - Bei allen Schwierigkeitsstufen:
   - Nach der Landung muss man kontrolliert/mindestens drei Sekunden auf dem Objekt stehen bleiben (Stick).
   - Mit dem Vorder-/Mittelfuß auf der Kante landen
-- Alle drei Schwierigkeitsstufen sind vom Parkour-Stangengerüst, siehe Video.
+- Alle drei Schwierigkeitsstufen sind vom Parkour-Stangengerüst, siehe Video. Aktuell nicht aufgebaut, kann aber auch mit beliebiger Stange umgesetzt werden.
 
 1. [ ] Auf schwarzem Quader landen (3 Fliesen von der Stange entfernt, siehe <span class="video-popup" data-video="Lache-Prezi/1.mp4">Video</span>)
 2. [ ] Auf einer Balancierstange landen, siehe Video (gleiche Entfernung wie oben, <span class="video-popup" data-video="Lache-Prezi/2.mp4">Video</span>)
@@ -218,7 +221,7 @@ lang: "de"
 ## P4: Climb-ups
 - Auf verschiedene Hindernisse kommen; die Technik darf frei gewählt werden.
 
-1. [ ] Mittlerer Parkour-Block (<span class="video-popup" data-video="ClimbUp/1.mp4">Video 🎥</span>, nicht aufgebaut, aber ersatz mögl. durch Holzblock)
+1. [ ] Rückseite der roten Treppe o. Holzblock hochkant (urspr. wie im <span class="video-popup" data-video="ClimbUp/1.mp4">Video 🎥</span> alter Parkour-Block)
 2. [ ] Unteres Level des großen Parkour-Blocks (<span class="video-popup" data-video="ClimbUp/2.mp4">Video 🎥</span>)
 3. [ ] Oberes Level (<span class="video-popup" data-video="ClimbUp/3.mp4">Video 🎥</span>)
 > [!tip] Extra:
@@ -248,8 +251,10 @@ lang: "de"
 2. [ ] Flugrolle über die kurze Seite einer blauen Matte
 3. [ ] Flugrolle über einen schwarzen Quader
 4. [ ] Flugrolle über den Weg zwischen den fortgeschrittenen Ninja-Bereichen
+
+<span class="track-input" data-kind="number" data-placeholder="Distanz" data-key="dive-roll-dist" data-min="5" data-step="1"></span>Füße persönlicher Rekord
 > [!tip] Extras:
-> - Über die rechte und linke Seite abrollen
+> - Über sowohl rechte als auch linke Seite abrollen
 > - Von irgendwo herunterspringen
 > - irgendwo durch springen
 
@@ -279,6 +284,17 @@ lang: "de"
 > - "Abgang" durch Climb-Up (auf den Block rauf), nicht runter springen
 > - mit dem Rücken zur Wand hangeln
 
+## Palm Spin
+- Sprung auf ein Hindernis (Block o.ä.), Drehung auf der Hand & Landung wieder vor dem Hindernis
+
+1. [ ] eine Fußberührung auf dem Hindernis
+2. [ ] Drehung über eine 90° Ecke, nur Handberhührung mit dem Hindernis
+3. [ ] 180° Drehung über eine gerade Kante
+> [!tip] Extras:
+> * Höhen variieren
+> * Drehung in die andere Richtung
+> * Drehung rückwärts über das Hindernis
+
 
 # Sonstige Challenges
 ---
@@ -306,14 +322,14 @@ lang: "de"
 > - Selbstrotierende Stange
 
 ## S3: Stangen-Aufstieg
-- Motivation: Aus einer hängenden Position ohne fremde Hilfe in den Stütz auf einer horizontalen Stange kommen
+- Motivation: Aus einer hängenden Position ohne fremde Hilfe (in den Stütz) auf eine horizontale Stange kommen
 
 1. [ ] Aufschwung <span class="video-popup" data-video="BarClimb/Aufschwung.mp4">(Video 🎥)</span>
 2. [ ] Kippe <span class="video-popup" data-video="BarClimb/Kippe.mp4">(Video 🎥)</span>
 3. [ ] Muscle up <span class="video-popup" data-video="BarClimb/MuscleUp.mp4">(Video 🎥)</span>
 > [!Tip] Extras:
 > - Mehrere hintereinander
-> - Die obere/Endposition als Ausgangspunkt für einen Schwung/Sprung/nächstes Hindernis nutzen
+> - Die obere/Endposition als Ausgangspunkt für einen Schwung/Sprung zum nächsten Hindernis nutzen
 
 ## S4: Handstand
 - Messung: Die Zeit, in der beide Füße den Boden nicht berühren (<span class="video-popup" data-video="Handstand/demo.mp4">Video 🎥</span>)
@@ -332,10 +348,10 @@ lang: "de"
 
 ## S5: Rad (Cartwheel)
 
-1. [ ] Ganz normales Turnerrad <span class="video-popup" data-video="Rad/Rad2.mp4">(Video 🎥)</span>
+1. [ ] Ganz normales Turnerrad (<span class="video-popup" data-video="Rad/Rad2.mp4">Video 🎥</span>)
 2. [ ] Mit nur einer Hand aufsetzen (versuche <span class="video-popup" data-video="Rad/Rad1S.mp4">führende</span> und <span class="video-popup" data-video="Rad/Rad1O.mp4">gegenüberliegende</span> Hand)
-3. [ ] Ohne Hände aufsetzen <span class="video-popup" data-video="Rad/Rad0.mp4">(Video 🎥)</span>
-4. [ ] Radwende (ggf. mit <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Sprung/Flick-Flack/Backflip" data-key="redwende-follow"></span>)
+3. [ ] Ohne Hände aufsetzen (<span class="video-popup" data-video="Rad/Rad0.mp4">Video 🎥</span>)
+4. [ ] Radwende (ggf. mit <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Sprung/Flick-Flack/Flip" data-key="redwende-follow"></span>)
 > [!tip] Extras:
 > - Mit der ungewohnten/unliebsamen Seite voran (Darkside)
 > - Beim einhändigen mit jeder Hand jeweils
