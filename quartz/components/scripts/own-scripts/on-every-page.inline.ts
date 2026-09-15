@@ -131,7 +131,7 @@ function setupTrackedInputs(currentPath: string): Set<string> {
     input.className = "track-input-field"
     input.placeholder = marker.dataset.placeholder?.trim() ?? ""
     input.setAttribute("aria-label", label || "Tracked challenge metric")
-    input.style.width = kind === "number" ? "5.5rem" : "7rem"
+    input.style.width = kind === "number" ? "4rem" : "9rem"
     input.style.padding = "0.05rem 0.25rem"
     input.style.fontSize = "0.85em"
 

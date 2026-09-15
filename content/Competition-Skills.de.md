@@ -31,10 +31,10 @@ lang: "de"
 4. [ ] 2m Laché
 5. [ ] 2,5m Laché
 6. [ ] 3m Laché
-7. <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Distanz" data-key="lache-max-dist" data-min="0" data-step="0.1"></span>m persönlicher Rekord
+<span class="track-input" data-kind="number" data-placeholder="Distanz" data-key="lache-max-dist" data-min="0" data-step="0.1"></span>m persönlicher Rekord
 > [!tip] Extras:
-> * Lachés zusammenhängend absolvieren (ohne absetzen, selbe Gap erlaubt), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Stück" data-key="lache-consecutive" data-min="0" data-step="1"></span> geschafft
-> * Connecten (ohne Zwischenschwung absolvieren), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Stück" data-key="lache-connected" data-min="0" data-step="1"></span> geschafft
+> * Lachés zusammenhängend absolvieren (ohne absetzen, selbe Gap erlaubt), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Stück" data-key="lache-consecutive" data-min="1" data-step="1"></span> geschafft
+> * Connecten (ohne Zwischenschwung absolvieren), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Stück" data-key="lache-connected" data-min="1" data-step="1"></span> geschafft
 
 ## N2: Himmelsleiter
 * Vertikale Himmelsleiter (<span class="video-popup" data-video="Himmelsleiter/demo.mp4">Video 🎥</span>)
@@ -44,8 +44,8 @@ lang: "de"
 > * Klimmzüge und Stange möglichst zur Brust ziehen, nicht nur Kinn rüber
 > * Scapular Pullups: mit mehr oder weniger gestreckten Armen nur aus den Schultern/dem Lat hoch ziehen
 > * Richtigen Griff finden: Cross (besserer Halt, weniger Kraft), beide Handdrehungen und Straight Grip (keine Assymetrie) ausprobieren
-> 1. in der selben Sufe hüpfen
-> 2. aus einer Stufe hängend heraus springen, dabei versuchen immer höher raus zu springen
+> * in der selben Sufe hüpfen
+> * aus einer Stufe hängend heraus springen, dabei versuchen immer höher raus zu springen
 > * Technikspezifische Übungen
 1. [ ] eine Stufe
 2. [ ] drei Stufen infolge
@@ -65,7 +65,7 @@ lang: "de"
 2. [ ] bis zur Mitte kommen
 3. [ ] ganz durch kommen
 4. [ ] immer 2 Stufen auf einmal (auch runter)
-5. [ ] in <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≤ 6" data-key="ruecken-min" data-min="0" data-max="10" data-step="1"></span> Hops geschafft (weniger = besser)
+5. [ ] in <span class="track-input" data-kind="number" data-placeholder="≤ 6" data-key="ruecken-min" data-min="1" data-max="10" data-step="1"></span> Hops geschafft (weniger = besser)
 > [!tip] Extras:
 > * rückwärts machen
 > * immer nur eine Seite (rechts/links) umsetzen
@@ -76,7 +76,7 @@ lang: "de"
 
 1. [ ] 2 Stufen in der Leiter schaffen (nacheinander)
 2. [ ] Leiter ganz durch
-3. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥︎ 2" data-key="ladder-forward-steps" data-min="0" data-step="1"></span> Stufen auf einmal
+3. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥︎ 2" data-key="ladder-forward-steps" data-min="1" data-step="1"></span> Stufen auf einmal
 4. [ ] Flying Bar (separate Halterungen) kurze Distanz springen
 5. [ ] Flying Bar lange Distanz
 6. [ ] Line der separaten Halterungen in einem durch
@@ -149,7 +149,7 @@ lang: "de"
 3. [ ] Mit Distanzgewinn durch die Airtime
 > [!tip] Extras:
 > - An parallelen Laché-Stangen
-> - Progressive Entfernung (PR: <span class="track-input" data-kind="number" data-label="PR" data-placeholder="m/Schwünge" data-key="gibbon-dist" data-min="0" data-step="1"></span>)
+> - Progressive Entfernung (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="m/Schwünge" data-key="gibbon-dist" data-min="0" data-step="1"></span>)
 > - An mitschwingenden Hindernissen
 
 ## N8: Teller
@@ -165,7 +165,7 @@ lang: "de"
 
 1. [ ] Fidget-Spinner ein Segment weiter greifen (120° Drehung, siehe <span class="video-popup" data-video="Spinner/demo.mp4">Video</span>)
 2. [ ] Ein X flippen (180° Drehung)
-3. [ ] Mehrfach hintereinander mit nur einem Zwischen/Rückschwung
+3. [ ] Mehrfach hintereinander mit nur einem Zwischen/Rückschwung (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥︎ 2" data-key="spin-reps" data-min="2" data-step="1"></span>Wdh.)
 > [!tip] Extras:
 > - Mehr Drehung (z.B. zwei Segmente beim Spinner)
 > - Drehung in die andere Richtung (vorwärts vs. rückwärts)
@@ -335,7 +335,7 @@ lang: "de"
 1. [ ] Ganz normales Turnerrad <span class="video-popup" data-video="Rad/Rad2.mp4">(Video 🎥)</span>
 2. [ ] Mit nur einer Hand aufsetzen (versuche <span class="video-popup" data-video="Rad/Rad1S.mp4">führende</span> und <span class="video-popup" data-video="Rad/Rad1O.mp4">gegenüberliegende</span> Hand)
 3. [ ] Ohne Hände aufsetzen <span class="video-popup" data-video="Rad/Rad0.mp4">(Video 🎥)</span>
-4. [ ] Radwende (ggf. mit <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Sprung/Flick-Flack/Backflip" data-key="180-consecutive"></span>)
+4. [ ] Radwende (ggf. mit <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Sprung/Flick-Flack/Backflip" data-key="redwende-follow"></span>)
 > [!tip] Extras:
 > - Mit der ungewohnten/unliebsamen Seite voran (Darkside)
 > - Beim einhändigen mit jeder Hand jeweils
@@ -364,7 +364,7 @@ lang: "de"
 2. [ ] Ohne Füße (Beine zum Einklemmen erlaubt)
 3. [ ] Nur mit den Händen (<span class="video-popup" data-video="Rope/3.mp4">Video 🎥</span>)
 > [!tip] Extras:
-> - Mit möglichst wenig Umgreifen schaffen, PR: <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Anz." data-key="rope-climb" data-min="0" data-step="1"></span> Griffe (ggf. vom Sitzen) bis zur Seil Aufhängung
+> - Mit möglichst wenig Umgreifen schaffen, <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Anz." data-key="rope-climb" data-min="0" data-step="1"></span> Griffe (ggf. vom Sitzen) bis zur Seil Aufhängung
 > - Auch kontrolliert wieder runter (nicht springen)
 > - Bestimmte Form dabei einhalten (z.B. L-Sit)
 > - An zwei parallelen Seilen, aber nur eine Hand pro Seil
