@@ -359,11 +359,25 @@ document.addEventListener("click", (e: MouseEvent) => {
   const videoBtn = (e.target as HTMLElement).closest(".video-popup")
   if (!videoBtn) return
 
+  const videoPath = getSafeVideoPath(videoBtn)
+  if (!videoPath) return
+
   e.preventDefault()
   const overlay = document.querySelector<HTMLElement>(".video-overlay")!
   const video = overlay.querySelector<HTMLVideoElement>("video")!
 
-  video.src = `./attachments/Videos/${videoBtn.getAttribute("data-video")}`
+  video.src = `./attachments/Videos/${videoPath}`
   overlay.classList.add("active")
   video.play().catch(console.error)
 })
+
+function getSafeVideoPath(videoBtn: Element): string | null {
+  const videoPath = videoBtn.getAttribute("data-video")?.trim()
+  if (!videoPath) return null
+
+  if (!/^[a-zA-Z0-9/_-]+\.mp4$/.test(videoPath)) {
+    return null
+  }
+
+  return videoPath
+}
