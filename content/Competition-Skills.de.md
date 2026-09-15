@@ -88,7 +88,7 @@ lang: "de"
 > * rückwärts springen
 > * Stange im Sprung um 180° drehen (rechts nach links und andersherum)
 
-## N3: Pin Board
+## N5: Pin Board
 - Starte an einem Ende
 
 1. [ ] bis zur Hälfte
@@ -99,7 +99,7 @@ lang: "de"
 > * Von beiden Seiten jeweils ein Pin
 > * Zwischen Boards mit einem Pin pro Board
 
-## N4: Labyrinth-Board
+## N6: Labyrinth-Board
 * blaue waagrechte Labyrinth-Hängeboards
 * zum starten/rankommen kann sich ein Block als Hilfe genommen werden
 * blaues Board selber darf nicht gegriffen werden
@@ -120,7 +120,7 @@ lang: "de"
 2. [ ] Kurs schaffen in unter 55 Sekunden
 3. [ ] Kurs schaffen in unter 40 Sekunden-->
 
-## N5: Mikado-Stäbe
+## N7: Mikado-Stäbe
 - Im Kinderbereich
 - Aktuell nicht ideal aufgebaut (kann aber trotzdem versucht werden).
 
@@ -131,7 +131,7 @@ lang: "de"
 > * Ohne Zwischenschwung abschließen
 > * 360° um eine Stange drehen, dann weitermachen
 
-## N6: Wall
+## N8: Wall
 - Es muss auf die Plattform gelangt werden, alleine die obere Kante zu erreichen genügt nicht
 
 1. [ ] Kleine Wall
@@ -144,7 +144,7 @@ lang: "de"
 > [!tip] Extras:
 > - Mache eine 360°-Drehung, bevor du die Kante/Stange greifst
 
-## N7: Gibbon
+## N9: Gibbon
 - Hangeln/einarmiges Schwingen mit abwechselndem Vorgreifen der Hände und kurzer Airtime dazwischen (<span class="video-popup" data-video="Gibbon/demo.mp4">Video 🎥</span>)
 
 1. [ ] Ohne Zwischenschwung durch
@@ -155,7 +155,7 @@ lang: "de"
 > - Progressive Entfernung (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="m/Schwünge" data-key="gibbon-dist" data-min="0" data-step="1"></span>)
 > - An mitschwingenden Hindernissen
 
-## N8: Teller
+## N10: Teller
 1. [ ] Am Teller schwingen ohne sich zu drehen (auf beiden Seiten greifen) & an nächste Stange springen
 2. [ ] Vor dem Sprung kontrollierte 180° Drehung
 3. [ ] 3x schwingen (geschlossener Griff mit beiden Händen auf einer Seite) inkl. 180°-Drehung vor jedem Rückschwung
@@ -163,7 +163,7 @@ lang: "de"
 > - Mit verschiedenen Drehwinkeln wegspringen (gerade, 90°, 180°, ...)
 > - Drehendes Hängen durch Schwingen stoppen
 
-## N9: Spinner flippen
+## N11: Spinner flippen
 - Ein sich mitdrehendes Hindernis (Fidget-Spinner o. X) während einer kurzen Airtime umgreifen/drehen lassen
 
 1. [ ] Fidget-Spinner ein Segment weiter greifen (120° Drehung, siehe <span class="video-popup" data-video="Spinner/demo.mp4">Video</span>)
@@ -284,7 +284,7 @@ lang: "de"
 > - "Abgang" durch Climb-Up (auf den Block rauf), nicht runter springen
 > - mit dem Rücken zur Wand hangeln
 
-## Palm Spin
+## P9: Palm Spin
 - Sprung auf ein Hindernis (Block o.ä.), Drehung auf der Hand & Landung wieder vor dem Hindernis
 
 1. [ ] eine Fußberührung auf dem Hindernis
