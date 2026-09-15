@@ -10,11 +10,12 @@ lang: "en"
 - Any number of attempts per challenge.
 - Each challenge has multiple difficulty levels.
 - For each challenge, mats may be placed as needed.
-- Example videos are not provided for everything.
-- For explanations of individual skills, techniques, assistance, demonstrations, or other please approach us :)
+- There are some explanatory example videos, but not for everything.
+- For explanations of individual skills, techniques, assistance, come approach us :)
 
 > [!Tip]
 > Record yourself/each other to track progress within the same skill and analyze any faults
+> Be creative and try new techniques and unexpected (cheats/betas), there are no limits!!!
 
 # Ninja Challenges
 
@@ -26,51 +27,148 @@ lang: "en"
 - The Lachés do not have to be performed consecutively.
 - Line in the advanced area (<span class="video-popup" data-video="Lache/demo.mp4">video 🎥</span>)
 
-1. [ ] 1. Point: Short (first) Laché
-2. [ ] 2. Point: the next one
-3. [ ] 3. Point: the next one
-4. [ ] …
-   > [!tip] Extras:
-   >
-   > - Complete Lachés consecutively (without touching floor)
-   > - Connect (consecutively without an intermediate swing)
+1. [ ] Short (first) Laché
+2. [ ] next longer Laché
+3. [ ] third Laché
+4. [ ] 2m Laché
+5. [ ] 2.5m Laché
+6. [ ] 3m Laché
+
+<span class="track-input" data-kind="number" data-placeholder="Distance" data-key="lache-max-dist" data-min="0" data-step="0.1"></span>m personal record
+> [!tip] Extras:
+> * Complete Lachés consecutively (without touching floor, same gap allowed), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Count" data-key="lache-consecutive" data-min="1" data-step="1"></span> consecutive
+> * Connect (without intermediate swing), <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Count" data-key="lache-connected" data-min="1" data-step="1"></span> connected
 
 ## N2: Sky Ladder
 
 - Vertical sky ladder (<span class="video-popup" data-video="Himmelsleiter/demo.mp4">video 🎥</span>)
 - It is allowed to start only from the third rung (due to body height), see video.
 
+> [!help]- Pre-exercises/warm-ups:
+> * Pull-ups and hang on bar, pull towards chest, not just chin over
+> * Scapular Pullups: with more or less extended arms, pull up only from shoulders/lat
+> * Find the right grip: Cross (better grip, less strength), both hand rotations and straight grip (no asymmetry), try them all out
+> * Hop on the same rung
+> * Jump out from hanging on one rung, try to jump higher each time
+> * Technique-specific exercises
+
 1. [ ] one rung
 2. [ ] three rungs in a row
 3. [ ] reach all the way to the top
-4. [ ] 2 rungs at once
-5. [ ] 3 rungs at once
+4. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 2" data-key="ladder-up-steps" data-min="2" data-step="1"></span> rungs at once
 > [!tip] Extras:
 > * Complete each level with different techniques (strength, kick, C)
 > * Also climb down again (level by level, no jumping off)
 
+## N3: Dragon Back
 
-## N3: Pin Board
+- upper edge of the pin boards
+- cross with bar (like sky ladder)
+
+1. [ ] climb 2 rungs
+2. [ ] reach the middle
+3. [ ] get all the way through
+4. [ ] always 2 rungs at once (also down)
+5. [ ] completed in <span class="track-input" data-kind="number" data-placeholder="≤ 6" data-key="ruecken-min" data-min="1" data-max="10" data-step="1"></span> hops (less = better)
+> [!tip] Extras:
+> * do it backwards
+> * always only one side (right/left) movement
+
+## N4: Flying Bar
+
+* Jump from mounting to mounting with the bar
+* There are separate mountings and something like an almost horizontal sky ladder
+
+1. [ ] 2 rungs in the ladder (one after another)
+2. [ ] entire ladder
+3. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 2" data-key="ladder-forward-steps" data-min="1" data-step="1"></span> rungs at once
+4. [ ] Flying Bar (separate mountings) jump short distance
+5. [ ] Flying Bar long distance
+6. [ ] line of separate mountings all the way through
+7. [ ] Horizontal ladder + separate mountings all the way through
+> [!tip] Extras:
+> * use unfamiliar grip (cross grip/straight)
+> * Connect (without intermediate swings)
+> * jump backwards
+> * rotate bar 180° in jump (right to left and vice versa)
+
+## N5: Pin Board
 
 - Start on one end
 
 1. [ ] up to halfway
 2. [ ] all the way through
 3. [ ] all the way through & insert into every hole once
-   > [!tip] Extras:
-   >
-   > - Different technique (long arms + swinging vs. locked, bent arms using strength)
-   > - One pin from each side
-   > - Between boards with one pin per board
+> [!tip] Extras:
+> * Different technique (long arms + swinging vs. locked, bent arms using strength)
+> * One pin from each side
+> * Between boards with one pin per board
 
-<!--## N4: Kids Course Speedrun (cheese pieces etc.)
-* Kids course next to the Wall (<span class="video-popup" data-video="KinderCourse/demo.mp4">old video 🎥</span>)
+## N6: Labyrinth Board
 
-1. [ ] complete the course under 80 seconds
-2. [ ] complete the course under 55 seconds
-3. [ ] complete the course under 40 seconds-->
+* blue horizontal labyrinth hanging boards
+* to start/reach it, a block can be used as help
+* the blue board itself may not be gripped
 
-## N5: Mikado Rods
+1. [ ] easier of the two (with less frequent repositioning) once from start to end
+2. [ ] harder one traverse
+3. [ ] both in one from top to bottom (the ring in between can also be used)
+4. [ ] both from bottom to top
+5. [ ] from top to bottom, without ring
+6. [ ] from bottom to top, without ring
+> [!tip] Extras:
+> * in each shaft once with both holders
+> * grip holders only on one side of the bar
+
+## N7: Wall
+
+- You must climb on the platform; touching the top edge is not sufficient
+
+1. [ ] small wall
+2. [ ] large wall
+3. [ ] small wall with <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≤ 3" data-key="s-wall-steps" data-min="0" data-step="1"></span> steps run-up
+4. [ ] large wall with <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≤ 3" data-key="m-wall-steps" data-min="0" data-step="1"></span> steps run-up
+5. [ ] small wall without run-up
+6. [ ] large wall without run-up
+7. [ ] without hands
+> [!tip] Extras:
+> - Do a 360° before holding to the edge/bar
+
+## N8: Gibbon
+
+- Swinging/one-armed swinging with alternating hand re-grabs and short airtime in between (<span class="video-popup" data-video="Gibbon/demo.mp4">video 🎥</span>)
+
+1. [ ] through without intermediate swings
+2. [ ] with actual airtime
+3. [ ] with distance gain due to airtime
+> [!tip] Extras:
+> - On parallel Laché bars
+> - Progressive distance (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="m/swings" data-key="gibbon-dist" data-min="0" data-step="1"></span>)
+> - On swinging obstacles
+
+## N9: Plate
+
+1. [ ] Swing on the plate without rotating (grip both sides) & jump to the closest bar
+2. [ ] Controlled 180° rotation before the jump
+3. [ ] 3x swinging (closed grip with both hands on one side) incl. 180° turn before each backward swing
+> [!tip] Extras:
+> - Jump away with different rotation angles (straight, 90°, 180°, ...)
+> - Stop a spinning hang by swinging
+
+## N10: Spinner flipping
+
+- Re-grip/rotate a spinning obstacle (fidget-spinner or X) during a short airtime
+
+1. [ ] reach one segment further on a fidget-spinner (120° rotation, see <span class="video-popup" data-video="Spinner/demo.mp4">video</span>)
+2. [ ] flip an X (180° rotation)
+3. [ ] multiple in a row with only one intermediate swing (<span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 2" data-key="spin-reps" data-min="2" data-step="1"></span>)
+> [!tip] Extras:
+> - More rotation (e.g. two segments on the spinner)
+> - Rotation in the other direction (forward vs. backward)
+> - Combination with 180
+> - re-grip in the front swing
+
+## N11: Mikado Rods
 
 - In kids area
 - Currently not set up ideally (you can try though).
@@ -82,58 +180,6 @@ lang: "en"
 > * Finish in one without intermediate swings
 > * 360° around one rod, then continue
 
-## N6: Wall
-
-- You must climb on the platform; touching the top edge is not sufficient
-
-1. [ ] small wall
-2. [ ] large wall
-3. [ ] small wall with ≤ 3 steps run-up
-4. [ ] large wall with ≤ 3 steps run-up
-5. [ ] small wall without run-up
-6. [ ] large wall without run-up
-7. [ ] without hands
-   > [!tip] Extras:
-   >
-   > - Do a 360° before holding to the edge/bar
-
-## N7: Gibbon
-
-- Moving forward/swinging with alternating hand re-grabs and short airtime in between (<span class="video-popup" data-video="Gibbon/demo.mp4">video 🎥</span>)
-
-1. [ ] through without intermediate swings
-2. [ ] with actual airtime
-3. [ ] with distance gain due to airtime
-   > [!tip] Extras:
-   >
-   > - On parallel Laché bars
-   > - Progressive distance
-   > - On swinging obstacles
-
-## N8: Plate
-
-1. [ ] Swing on the plate without rotating (grip both sides) & jump to the closest bar
-2. [ ] Controlled 180° rotation before the jump
-3. [ ] 3x swinging (closed grip with both hands on one side) incl. 180° turn before each backward swing
-   > [!tip] Extras:
-   >
-   > - Jump away with different rotation angles (straight, 90°, 180°, ...)
-   > - Stop a spinning hang by swinging
-
-## N9: Spinner flipping
-
-- Re-grip/rotate a spinning obstacle (fidget-spinner or X) during a short airtime
-
-1. [ ] reach one segment further on a fidget-spinner (120° rotation, see <span class="video-popup" data-video="Spinner/demo.mp4">video</span>)
-2. [ ] flip an X (180° rotation)
-3. [ ] multiple in a row with only one intermediate swing
-   > [!tip] Extras:
-   >
-   > - More rotation (e.g. two segments on the spinner)
-   > - Rotation in the other direction (forward vs. backward)
-   > - Combination with 180
-   > - re-grip in the front swing
-
 # Parkour Challenges
 
 ---
@@ -143,13 +189,13 @@ lang: "en"
 - For all difficulty levels:
   - After landing you must stand on the object controlled/for at least three seconds (stick).
   - Land on the edge with your fore/middle foot
+- Currently not set up, find/build comparable/adjustable to your level jumps
 
 1. [ ] jump down from middle to small box <span class="video-popup" data-video="Prezi/1.mp4">(video 🎥)</span>
 2. [ ] same, but up <span class="video-popup" data-video="Prezi/2.mp4">(video 🎥)</span>
 3. [ ] from middle to large box up <span class="video-popup" data-video="Prezi/3.mp4">(video 🎥)</span>
-   > [!tip] Extra:
-   >
-   > - From the block onto the high bar in the rear bar frame <span class="video-popup" data-video="Prezi/HighBar-Prezi.mp4">(video 🎥)</span>
+> [!tip] Extra:
+> - From the block onto the high bar in the rear bar frame <span class="video-popup" data-video="Prezi/HighBar-Prezi.mp4">(video 🎥)</span>
 
 ## P2: Lache Precision Jumps
 
@@ -157,17 +203,16 @@ lang: "en"
 - For all difficulty levels:
   - After landing you must stand on the object controlled/for at least three seconds (stick).
   - Land on the edge with your fore/middle foot
-- All three difficulty levels are from the parkour bar frame, see video.
+- All difficulty levels are from the parkour bar frame, see video. Currently not set up, but can be done with any bar.
 
 1. [ ] land on the black cube (3 tiles away from the bar, see <span class="video-popup" data-video="Lache-Prezi/1.mp4">video</span>)
 2. [ ] land on a balance bar, see video (same distance as above, see <span class="video-popup" data-video="Lache-Prezi/2.mp4">video</span>)
 3. [ ] land on a low bar of the bar frame (<span class="video-popup" data-video="Lache-Prezi/3.mp4">video 🎥</span>)
 4. [ ] land on the rear upper bar <span class="video-popup" data-video="Lache-Prezi/Lache-Prezi4.mp4">(video 🎥)</span>
-   > [!tip] Extra:
-   >
-   > - Increase distance
-   > - Jump backward
-   > - Raise target (e.g. block on its side)
+> [!tip] Extras:
+> - Increase distance
+> - Jump backward
+> - Raise target (e.g. block on its side)
 
 ## P3: Mini Trampoline / Flips
 
@@ -176,26 +221,23 @@ lang: "en"
 1. [ ] 360° rotation (land on feet and hands must not touch the mat) (<span class="video-popup" data-video="Flips/1.mp4">video 🎥</span>)
 2. [ ] dive roll (<span class="video-popup" data-video="Flips/2.mp4">video 🎥</span>)
 3. [ ] flip/salto (any type, but land on feet and hands must not touch the mat - <span class="video-popup" data-video="Flips/3.mp4">video 🎥</span>)
-   > [!tip] Extra:
-   >
-   > - Touch the ceiling
-   > - Try a different flip (e.g. front, back, side)
-   > - Add a twist ("vertical" rotation)
-   > - Try without mini trampoline
+4. [ ] Touch the ceiling
+> [!tip] Extras:
+> - Try a different flip (e.g. front, back, side)
+> - Add a twist ("vertical" rotation)
+> - Try without mini trampoline
 
 ## P4: Climb-ups
 
 - Reach various obstacles; technique may be chosen freely.
-- Points increase with height.
 
-1. [ ] middle parkour block (<span class="video-popup" data-video="ClimbUp/1.mp4">video 🎥</span>)
+1. [ ] back of red stairs or wooden block on edge (originally as in <span class="video-popup" data-video="ClimbUp/1.mp4">video 🎥</span> old parkour block)
 2. [ ] low level of large parkour block (<span class="video-popup" data-video="ClimbUp/2.mp4">video 🎥</span>)
 3. [ ] high level (<span class="video-popup" data-video="ClimbUp/3.mp4">video 🎥</span>)
-   > [!tip] Extra:
-   >
-   > - Reach the top in one continuous movement
-   > - Same levels but without hands
-   > - Run up on soft mat
+> [!tip] Extra:
+> - Reach the top in one continuous movement
+> - Same levels but without hands
+> - Run up on soft mat
 
 ## P5: 180s
 
@@ -203,16 +245,15 @@ lang: "en"
 - Any bar may be chosen.
 
 1. [ ] one 180
-2. [ ] two 180s directly in a row
-3. [ ] five 180s directly in a row
-4. PR (max consecutive 180s): <span class="track-input" data-kind="number" data-label="PR" data-placeholder="e.g. 7" data-key="p5-180-pr" data-min="0" data-step="1"></span>
-   > [!tip] Extras:
-   >
-   > - Force some airtime
-   > - Other rotation direction
-   > - Swing steeper than 90°
-   > - Use a swinging obstacle
-   > - Try in the backswing
+2. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 3" data-key="180-consecutive" data-min="2" data-step="1"></span> consecutive 180s without touching down (intermediate swings allowed)
+3. [ ] two 180s directly in a row
+4. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 5" data-key="180-connected" data-min="2" data-step="1"></span> consecutive 180s directly in a row
+> [!tip] Extras:
+> - Force some airtime
+> - Other rotation direction
+> - Swing steeper than 90°
+> - Use a swinging obstacle
+> - Try in the backswing
 
 ## P6: Dive Rolls
 
@@ -222,10 +263,12 @@ lang: "en"
 2. [ ] dive roll over the short side of a blue mat
 3. [ ] dive roll over a black cube
 4. [ ] dive roll over the path between the advanced Ninja areas
-   > [!tip] Extra:
-   >
-   > - Roll over the right and left sides
-   > - Jump down from somewhere
+
+<span class="track-input" data-kind="number" data-placeholder="Distance" data-key="dive-roll-dist" data-min="5" data-step="1"></span> feet personal record
+> [!tip] Extras:
+> - Roll over the right and left sides
+> - Jump down from somewhere
+> - Jump through somewhere
 
 ## P7: Wall-Return
 
@@ -234,11 +277,38 @@ lang: "en"
 1. [ ] highest bar <span class="video-popup" data-video="WallReturn/Return1.mp4">(far left, see video 🎥)</span>
 2. [ ] next highest bar <span class="video-popup" data-video="WallReturn/Return2.mp4">(video 🎥)</span>
 3. [ ] fluidly from the floor to the bar and directly return to the box <span class="video-popup" data-video="WallReturn/Return3.mp4">(video 🎥)</span>
-   > [!tip] Extras:
-   >
-   > - Use two slanted bars in a V shape
-   > - Use different bars from the floor
-   > - 180 rotation in the other direction
+> [!tip] Extras:
+> - Use two slanted bars in a V shape
+> - Use different bars from the floor
+> - 180 rotation in the other direction
+
+## P8: Edge Traverse
+
+- traverse along the edge of the freestanding blue block in the rear parkour/kids area
+- Feet only touch the vertical wall
+- one edge traverse includes climbing around both adjacent corners
+
+1. [ ] short side
+2. [ ] long side
+3. [ ] once around the entire block
+4. [ ] 360° rotation while hanging
+> [!tip] extras:
+> - in both directions (right/left long)
+> - Entry from top (standing on block)
+> - "Exit" via climb-up (climb onto the block), not jumping off
+> - traverse with back to the wall
+
+## P9: Palm Spin
+
+- Jump onto an obstacle (block etc.), rotation on the hand & landing again in front of the obstacle
+
+1. [ ] one foot contact on the obstacle
+2. [ ] rotation over a 90° corner, only hand contact with the obstacle
+3. [ ] 180° rotation over a straight edge
+> [!tip] Extras:
+> * Vary heights
+> * Rotation in the other direction
+> * Rotation backwards over the obstacle
 
 # Other Challenges
 
@@ -252,9 +322,8 @@ lang: "en"
 2. [ ] there and back without touching down, walk both directions forward
 3. [ ] complete the slackline backwards
 4. [ ] there and back backwards
-   > [!tip] Extra:
-   >
-   > - Balance two segments on the Parkour Bar Frame<span class="video-popup" data-video="Balance/HighBar-Balance.mp4">(video 🎥)</span>
+> [!tip] Extra:
+> - Balance two segments on the Parkour Bar Frame (<span class="video-popup" data-video="Balance/HighBar-Balance.mp4">video 🎥</span>)
 
 ## S2: Hanging
 
@@ -263,11 +332,11 @@ lang: "en"
 1. [ ] at least 30 seconds
 2. [ ] at least 45 seconds
 3. [ ] at least 70 seconds
-   > [!tip] Extras:
-   >
-   > - Without cross grip (only straight)
-   > - Self-rotating bar
-   > - Max out
+4. [ ] at least <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 100" data-key="hanging-dur" data-min="70" data-step="1"></span> seconds hang
+5. [ ] one-handed (without switching) <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 20" data-key="one-hand-hang" data-min="0" data-step="1"></span> seconds hang
+> [!tip] Extras:
+> - With less favorable grip (cross grip, other side/straight)
+> - Self-rotating bar
 
 ## S3: Bar Climb
 
@@ -276,10 +345,9 @@ lang: "en"
 1. [ ] upward circle <span class="video-popup" data-video="BarClimb/Aufschwung.mp4">(video 🎥)</span>
 2. [ ] kip up <span class="video-popup" data-video="BarClimb/Kippe.mp4">(video 🎥)</span>
 3. [ ] muscle up <span class="video-popup" data-video="BarClimb/MuscleUp.mp4">(video 🎥)</span>
-   > [!Tip] Extras:
-   >
-   > - Multiple in a row
-   > - Use upper/final position as start for a swing/jump/next obstacle
+> [!Tip] Extras:
+> - Multiple in a row
+> - Use upper/final position as start for a swing/jump to next obstacle
 
 ## S4: Handstand
 
@@ -288,30 +356,33 @@ lang: "en"
 
 1. [ ] hold at least 2 seconds
 2. [ ] hold at least 5 seconds
-3. [ ] hold at least 10 seconds
-   > [!tip] Extras:
-   >
-   > - Line up the body (get rid of the banana)
-   > - Attempt to walk
-   > - Get off using a roll
-   > - Push-up (also possible against the wall)
-   > - Briefly remove one hand
+3. [ ] hold at least <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 10" data-key="handstand-dur" data-min="5" data-step="1"></span> seconds
+4. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥ 1.0" data-key="handstand-walk" data-min="0" data-step="0.1"></span> own body lengths walked
+> [!tip] Extras:
+> - Line up the body (get rid of the banana)
+> - In a roll exit
+> - Push-up (also possible against the wall)
+> - Briefly remove one hand
+> - Entry like cartwheel (both sides)
 
 ## S5: Cartwheel
 
-1. [ ] standard gymnast cartwheel <span class="video-popup" data-video="Rad/Rad2.mp4">(video 🎥)</span>
-2. [ ] cartwheel touching down with only one hand (try <span class="video-popup" data-video="Rad/Rad1S.mp4">leading</span> and <span class="video-popup" data-video="Rad/Rad1O.mp4">opposite</span> hand)
-3. [ ] cartwheel without hands touching down <span class="video-popup" data-video="Rad/Rad0.mp4">(video 🎥)</span>
-   > [!tip] Extras:
-   >
-   > - With the unfamiliar/unpreferred side leading (darkside)
-   > - For one-handed, perform with each hand
+1. [ ] standard gymnast cartwheel (<span class="video-popup" data-video="Rad/Rad2.mp4">video 🎥</span>)
+2. [ ] cartwheel with only one hand touching down (try <span class="video-popup" data-video="Rad/Rad1S.mp4">leading</span> and <span class="video-popup" data-video="Rad/Rad1O.mp4">opposite</span> hand)
+3. [ ] cartwheel without hands touching down (<span class="video-popup" data-video="Rad/Rad0.mp4">video 🎥</span>)
+4. [ ] cartwheel return (optionally with <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Jump/Flick-Flack/Flip" data-key="redwende-follow"></span>)
+> [!tip] Extras:
+> - With the unfamiliar/unpreferred side leading (darkside)
+> - For one-handed, perform with each hand
+> - Multiple in a row
+> - exactly on a line
+> - cartwheel return in other direction (look forward instead of back)
 
 ## S6: Bridge (Backbend)
 
 1. [ ] hold 10 sec. <span class="video-popup" data-video="Bruecke/Bruecke1.mp4">(video 🎥)</span>
 2. [ ] reach from all-fours position by turning sideways and hold <span class="video-popup" data-video="Bruecke/Bruecke2.mp4">(video 🎥)</span>
-3. [ ] reach from standing by leaning backward <span class="video-popup" data-video="Bruecke/Bruecke3.mp4">(video 🎥)</span>, preferably from a top position
+3. [ ] reach from standing by leaning backward <span class="video-popup" data-video="Bruecke/Bruecke3.mp4">(video 🎥)</span>, preferably from an upright position
 
 ## S7: Kick-up
 
@@ -328,24 +399,12 @@ lang: "en"
 1. [ ] get up somehow
 2. [ ] without feet (legs can be clamped)
 3. [ ] only with hands <span class="video-popup" data-video="Rope/3.mp4">(video 🎥)</span>
-   > [!tip] Extras:
-   >
-   > - Succeed with as few re-grips as possible
-   > - Also come down controlled (no jumping)
-   > - Maintain a certain form (e.g. L-sit)
-   > - On two parallel ropes, but only one hand per rope
-   > - Upside down?
-
-## S9: Tire Walk
-
-- A tire is available in the gym room.
-
-1. [ ] run on the tire from the red line to the end of the blue mat forwards.
-   - Exact route see <span class="video-popup" data-video="Tire/1.mp4">video 🎥</span>.
-   - Assistance allowed when mounting.
-2. [ ] the same, but mount without assistance (<span class="video-popup" data-video="Tire/2.mp4">video 🎥</span>)
-3. [ ] move backwards
-4. [ ] roll forward to the end point and roll back to the start point backwards (<span class="video-popup" data-video="Tire/3.mp4">video 🎥</span>)
+> [!tip] Extras:
+> - Succeed with as few re-grips as possible, <span class="track-input" data-kind="number" data-label="PR" data-placeholder="Count" data-key="rope-climb" data-min="0" data-step="1"></span> grips
+> - Also come down controlled (no jumping)
+> - Maintain a certain form (e.g. L-sit)
+> - On two parallel ropes, but only one hand per rope
+> - Upside down
 
 <div class="video-overlay">
   <div class="video-container">
