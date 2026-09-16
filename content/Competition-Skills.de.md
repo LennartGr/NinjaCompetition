@@ -15,7 +15,7 @@ lang: "de"
 
 > [!Tip]
 > Nimm dich/euch gegenseitig auf, um Fortschritte bei einzelnen Übungen zu tracken und Fehler zu identifizieren.
-> Seid auch kreativ und probiert neue Techniken und nicht vorhergesehene (Cheats/Betas) aus, es sind keine grenzen gesetzt!!!
+> Seid auch kreativ und probiert neue Techniken und nicht vorhergesehenes (Cheats/Betas) aus, es sind keine grenzen gesetzt!!!
 
 # Ninja-Challenges
 ---
@@ -48,12 +48,13 @@ lang: "de"
 > * in der selben Sufe hüpfen
 > * aus einer Stufe hängend heraus springen, dabei versuchen immer höher raus zu springen
 > * Technikspezifische Übungen
+
 1. [ ] eine Stufe
 2. [ ] drei Stufen infolge
 3. [ ] bis ganz nach oben kommen
 4. [ ] <span class="track-input" data-kind="number" data-label="PR" data-placeholder="≥︎ 2" data-key="ladder-up-steps" data-min="2" data-step="1"></span> Stufen auf einmal
-6. [ ] von einer Himmelsleiter zur anderen springen
-7. [ ] von einer zu anderen mit Höhengewinn
+5. [ ] von einer Himmelsleiter zur anderen springen
+6. [ ] von einer zu anderen mit Höhengewinn
 > [!tip] Extras:
 > * Jedes Level mit verschiedenen Techniken schaffen (Kraft, Kick, C)
 > * Auch wieder runter gehen (Stufe für Stufe, nicht springen)
@@ -116,6 +117,7 @@ lang: "de"
 
 <!--## N4: Speedrun Kinderkurs (Käsestücke etc.)
 * Kinderkurs neben der Wall (<span class="video-popup" data-video="KinderCourse/demo.mp4">altes Video 🎥</span>)
+
 1. [ ] Kurs schaffen in unter 80 Sekunden
 2. [ ] Kurs schaffen in unter 55 Sekunden
 3. [ ] Kurs schaffen in unter 40 Sekunden-->
@@ -129,7 +131,7 @@ lang: "de"
 3. [ ] Hochklettern, dann nur mit den Händen abschließen (<span class="video-popup" data-video="Mikado/3.mp4">Video 🎥</span>)
 > [!tip] Extras (für nur Hände):
 > * Ohne Zwischenschwung abschließen
-> * 360° um eine Stange drehen, dann weitermachen
+> * 360° um eine/jede Stange drehen, dann weitermachen
 
 ## N8: Wall
 - Es muss auf die Plattform gelangt werden, alleine die obere Kante zu erreichen genügt nicht
@@ -156,6 +158,7 @@ lang: "de"
 > - An mitschwingenden Hindernissen
 
 ## N10: Teller
+
 1. [ ] Am Teller schwingen ohne sich zu drehen (auf beiden Seiten greifen) & an nächste Stange springen
 2. [ ] Vor dem Sprung kontrollierte 180° Drehung
 3. [ ] 3x schwingen (geschlossener Griff mit beiden Händen auf einer Seite) inkl. 180°-Drehung vor jedem Rückschwung
@@ -195,7 +198,7 @@ lang: "de"
 - Bei allen Schwierigkeitsstufen:
   - Nach der Landung muss man kontrolliert/mindestens drei Sekunden auf dem Objekt stehen bleiben (Stick).
   - Mit dem Vorder-/Mittelfuß auf der Kante landen
-- Alle drei Schwierigkeitsstufen sind vom Parkour-Stangengerüst, siehe Video. Aktuell nicht aufgebaut, kann aber auch mit beliebiger Stange umgesetzt werden.
+- Alle Schwierigkeitsstufen sind vom Parkour-Stangengerüst, siehe Video. Aktuell nicht aufgebaut, kann aber auch mit beliebiger Stange umgesetzt werden.
 
 1. [ ] Auf schwarzem Quader landen (3 Fliesen von der Stange entfernt, siehe <span class="video-popup" data-video="Lache-Prezi/1.mp4">Video</span>)
 2. [ ] Auf einer Balancierstange landen, siehe Video (gleiche Entfernung wie oben, <span class="video-popup" data-video="Lache-Prezi/2.mp4">Video</span>)
@@ -252,7 +255,7 @@ lang: "de"
 3. [ ] Flugrolle über einen schwarzen Quader
 4. [ ] Flugrolle über den Weg zwischen den fortgeschrittenen Ninja-Bereichen
 
-<span class="track-input" data-kind="number" data-placeholder="Distanz" data-key="dive-roll-dist" data-min="5" data-step="1"></span>Füße persönlicher Rekord
+<span class="track-input" data-kind="number" data-placeholder="Distanz" data-key="dive-roll-dist" data-min="5" data-step="1"></span> Füße persönlicher Rekord
 > [!tip] Extras:
 > - Über sowohl rechte als auch linke Seite abrollen
 > - Von irgendwo herunterspringen
@@ -287,7 +290,7 @@ lang: "de"
 ## P9: Palm Spin
 - Sprung auf ein Hindernis (Block o.ä.), Drehung auf der Hand & Landung wieder vor dem Hindernis
 
-1. [ ] eine Fußberührung auf dem Hindernis
+1. [ ] nur eine Fußberührung auf dem Hindernis
 2. [ ] Drehung über eine 90° Ecke, nur Handberhührung mit dem Hindernis
 3. [ ] 180° Drehung über eine gerade Kante
 > [!tip] Extras:
@@ -351,7 +354,7 @@ lang: "de"
 1. [ ] Ganz normales Turnerrad (<span class="video-popup" data-video="Rad/Rad2.mp4">Video 🎥</span>)
 2. [ ] Mit nur einer Hand aufsetzen (versuche <span class="video-popup" data-video="Rad/Rad1S.mp4">führende</span> und <span class="video-popup" data-video="Rad/Rad1O.mp4">gegenüberliegende</span> Hand)
 3. [ ] Ohne Hände aufsetzen (<span class="video-popup" data-video="Rad/Rad0.mp4">Video 🎥</span>)
-4. [ ] Radwende (ggf. mit <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Sprung/Flick-Flack/Flip" data-key="redwende-follow"></span>)
+4. [ ] Radwende (ggf. mit folgendem <span class="track-input" data-kind="text" data-label="Type" data-placeholder="Sprung/Flick-Flack/Flip" data-key="redwende-follow"></span>)
 > [!tip] Extras:
 > - Mit der ungewohnten/unliebsamen Seite voran (Darkside)
 > - Beim einhändigen mit jeder Hand jeweils
@@ -366,7 +369,6 @@ lang: "de"
 3. [ ] Aus dem Stand durch Kippen nach hinten <span class="video-popup" data-video="Bruecke/Bruecke3.mp4">(Video 🎥)</span>, bevorzugt aus einer aufrechten Position
 
 ## S7: Kick-up
-
 - Aus einer liegenden Position durch einen Kick direkt auf die Füße springen
 
 1. [ ] Ganz normal <span class="video-popup" data-video="KickUp/KickUp.mp4">(Video 🎥)</span>
